@@ -11,7 +11,7 @@
 @implementation XTPerson
 
 -(void)run{
-    gfdhgfdhfhfdhsfshfhf101f272
+   
 }
 
 @end
