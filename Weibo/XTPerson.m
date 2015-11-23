@@ -10,6 +10,8 @@
 
 @implementation XTPerson
 
-
+-(void)run{
+    gfdhgfdhfhfdhsfshfhf
+}
 
 @end
