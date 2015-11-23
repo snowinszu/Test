@@ -14,6 +14,7 @@
 		04243FC01C02B1FE00F8BBE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04243FBF1C02B1FE00F8BBE6 /* Images.xcassets */; };
 		04243FC31C02B1FE00F8BBE6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04243FC11C02B1FE00F8BBE6 /* LaunchScreen.xib */; };
 		04243FCF1C02B1FE00F8BBE6 /* WeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04243FCE1C02B1FE00F8BBE6 /* WeiboTests.m */; };
+		04243FDA1C02B27100F8BBE6 /* XTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 04243FD91C02B27100F8BBE6 /* XTPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		04243FC81C02B1FE00F8BBE6 /* WeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04243FCD1C02B1FE00F8BBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04243FCE1C02B1FE00F8BBE6 /* WeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiboTests.m; sourceTree = "<group>"; };
+		04243FD81C02B27100F8BBE6 /* XTPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPerson.h; sourceTree = "<group>"; };
+		04243FD91C02B27100F8BBE6 /* XTPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				04243FBF1C02B1FE00F8BBE6 /* Images.xcassets */,
 				04243FC11C02B1FE00F8BBE6 /* LaunchScreen.xib */,
 				04243FB21C02B1FE00F8BBE6 /* Supporting Files */,
+				04243FD81C02B27100F8BBE6 /* XTPerson.h */,
+				04243FD91C02B27100F8BBE6 /* XTPerson.m */,
 			);
 			path = Weibo;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04243FDA1C02B27100F8BBE6 /* XTPerson.m in Sources */,
 				04243FBB1C02B1FE00F8BBE6 /* ViewController.m in Sources */,
 				04243FB81C02B1FE00F8BBE6 /* AppDelegate.m in Sources */,
 				04243FB51C02B1FE00F8BBE6 /* main.m in Sources */,
