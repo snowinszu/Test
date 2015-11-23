@@ -10,4 +10,6 @@
 
 @interface XTPerson : NSObject
 
+-(void)run;
+
 @end
