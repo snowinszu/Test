@@ -10,7 +10,7 @@ Hello World
 | `wsReconnectInterval` | number | 5 | The number of seconds to delay before attempting to reconnect by websocket.
 | `loadTimeout` | number | 3 | Timeout to download a segment from a peer, if exceeded the segment is dropped.
 | `maxBufSize` | number | 1024 * 1024 * 50 | The max size of binary data that can be stored in the cache.
-| `p2pEnabled` | boolean | true | Enable p2p engine.
+| `p2pEnabled` | boolean | true | Enable or disable p2p engine.
 | `tsStrictMatched` | boolean | false | Drop the query string of ts url while sharing segment to peers.
 | `tag` | string | [hlsjs version] | User defined tag which is useful for observing the effect of parameters turning.
 | `channelId` | function | - | Pass a function to generate channel Id.
@@ -28,7 +28,7 @@ Hello World
         wsReconnectInterval: number         // The number of seconds to delay before attempting to reconnect by websocket (default=5)
         loadTimeout: number                 // Timeout of downloading by p2p (default=3)
         maxBufSize: number                  // The max size of binary data that can be stored in the cache(default=1024*1024*50)
-        p2pEnabled: boolean                 // Enable P2P (default=true)
+        p2pEnabled: boolean                 // Enable or disable (default=true)
         tsStrictMatched: boolean            // Drop the query string of ts url while sharing segment to peers (default=false)
         tag: string                         // User defined tag which is useful for observing the effect of parameters turning (default=[hlsjs version])
         // advanced options
