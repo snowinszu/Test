@@ -9,12 +9,12 @@ Hello World
 | `wsMaxRetries` | number | 3 | The maximum number of reconnection attempts that will be made by websocket before giving up.
 | `wsReconnectInterval` | number | 5 | The number of seconds to delay before attempting to reconnect by websocket.
 | `loadTimeout` | number | 3 | Timeout to download a segment from a peer, if exceeded the segment is dropped.
-| `maxBufSize` | number | 1024*1024*50 | The max size of binary data that can be stored in the cache.
+| `maxBufSize` | number | 1024 * 1024 * 50 | The max size of binary data that can be stored in the cache.
 | `p2pEnabled` | boolean | true | Enable p2p engine.
 | `tsStrictMatched` | boolean | false | Drop the query string of ts url while sharing segment to peers.
-| `tag` | string | [hlsjs version] | User defined tag which is useful for observing the effect of parameters turning
-| `channelId` | function | - | Pass a function to generate channel Id
-| `packetSize` | number | 64*1024 | The maximum package size sent by datachannel, 64KB should work with most of recent browsers. Set it to 16KB for older browsers support
+| `tag` | string | [hlsjs version] | User defined tag which is useful for observing the effect of parameters turning.
+| `channelId` | function | - | Pass a function to generate channel Id.
+| `packetSize` | number | 64 * 1024 | The maximum package size sent by datachannel, 64KB should work with most of recent browsers. Set it to 16KB for older browsers support.
 
 
 
