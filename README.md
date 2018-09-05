@@ -2,7 +2,7 @@ Hello World
 
 
 | Field | Type | Default | Description |
-| --- | ---- | ---- | ------ |
+| :-: | :-: | :-: | :-: |
 | `logLevel` | string or boolean | 'none' | Print log level(debug, info, warn, error, none，false=none, true=debug).
 | `announce` | string | 'https://api.cdnbye.com/v1' | The address of tracker server.
 | `wsSignalerAddr` | string | 'wss://signal.cdnbye.com/wss' | The address of signal server.
