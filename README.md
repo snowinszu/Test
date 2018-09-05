@@ -18,24 +18,21 @@ Hello World
 
 
 
+| 字段 | 类型 | 默认值 | 描述 |
+| :-: | :-: | :-: | :-: |
+| `logLevel` | string or boolean | 'none' | log的等级，分为debug、info、warn、error、none，设为true等于debug，设为false等于none。
+| `announce` | string | 'https://api.cdnbye.com/v1' | tracker服务器地址。
+| `wsSignalerAddr` | string | 'wss://signal.cdnbye.com/wss' | 信令服务器地址。
+| `wsMaxRetries` | number | 3 |websocket连接重试次数。
+| `wsReconnectInterval` | number | 5 | websocket重连时间间隔。
+| `loadTimeout` | number | 3 | p2p下载的超时时间。
+| `maxBufSize` | number | 1024 * 1024 * 50 | p2p缓存的最大数据量。
+| `p2pEnabled` | boolean | true | 是否开启P2P。
+| `tsStrictMatched` | boolean | false | p2p传输的ts是否要严格匹配（去掉查询参数）。
+| `tag` | string | [hlsjs version] | 用户自定义标签，可用于在后台查看参数调整效果。
+| `channelId` | function | - | 标识channel的字段，同一个channel的用户可以共享数据。
+| `packetSize` | number | 64 * 1024 | 每次通过datachannel发送的包的大小，64KB适用于较新版本的浏览器，如果要兼容低版本浏览器可以设置成16KB。
 
 
 
 
-
-        wsSignalerAddr: string              // The address of signal server (default=wss://signal.cdnbye.com/wss)
-        wsMaxRetries: number                // The maximum number of reconnection attempts that will be made by websocket before giving up (default=3)
-        wsReconnectInterval: number         // The number of seconds to delay before attempting to reconnect by websocket (default=5)
-        loadTimeout: number                 // Timeout of downloading by p2p (default=3)
-        maxBufSize: number                  // The max size of binary data that can be stored in the cache(default=1024*1024*50)
-        p2pEnabled: boolean                 // Enable or disable (default=true)
-        tsStrictMatched: boolean            // Drop the query string of ts url while sharing segment to peers (default=false)
-        tag: string                         // User defined tag which is useful for observing the effect of parameters turning (default=[hlsjs version])
-        // advanced options
-        channelId: function                 // Pass a function to generate channel Id (default: see utils/toolFuns)
-        dcRequestTimeout: number            // The request timeout of datachannel (default=3)
-        dcUploadTimeout: number             // The upload timeout of datachannel (default=3)
-        packetSize: number                  // The maximum package size sent by datachannel, 64KB should work with most of recent browsers. Set it to 16KB for older browsers support (default=64*1024).
-        enableLogUpload: boolean            // Enable upload logs to server (default=false)
-        logUploadAddr: string               // Log upload address (default=wss://api.cdnbye.com/trace)
-        logUploadLevel: string              // Log upload level(debug, info, warn, error, none) (default=warn)   
